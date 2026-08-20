@@ -1,0 +1,56 @@
+@'
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Streamlit and caches
+.streamlit/
+.cache/
+
+# Secrets and environment variables
+.env
+.env.*
+*.env
+secrets.toml
+
+# Large and generated data
+data/kestrel_ops.db
+data/competitor_prices.csv
+database_inspection.txt
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Archives and extracted temporary folders
+*.zip
+FDE_Assignment_Extracted/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Python packaging output
+build/
+dist/
+*.egg-info/
+'@ | Set-Content -Encoding utf8 .gitignore
