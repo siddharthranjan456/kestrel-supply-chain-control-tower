@@ -1,56 +1,44 @@
-@'
-# Virtual environments
+# Python environment
 .venv/
 venv/
 env/
 
-# Python-generated files
+# Python cache and tests
 __pycache__/
 *.py[cod]
-*$py.class
-
-# Testing and coverage
 .pytest_cache/
 .coverage
 htmlcov/
 
-# Streamlit and caches
-.streamlit/
-.cache/
+# Supplied operational data — do not commit
+data/kestrel_ops.db
+data/kestrel_ops.db-journal
+data/kestrel_ops.db-shm
+data/kestrel_ops.db-wal
+data/csv/
 
-# Secrets and environment variables
+# Generated scraper output
+data/competitor_prices.csv
+
+# Assignment packs and local documents
+*.zip
+01_Assignment_Brief*.docx
+02_Data_Dictionary.md
+03_External_Sources.md
+
+# Environment variables and secrets
 .env
 .env.*
-*.env
+*.secret
 secrets.toml
+.streamlit/secrets.toml
 
-# Large and generated data
-data/kestrel_ops.db
-data/competitor_prices.csv
-database_inspection.txt
-*.db-journal
-*.db-shm
-*.db-wal
-
-# Archives and extracted temporary folders
-*.zip
-FDE_Assignment_Extracted/
-
-# IDE settings
+# Editor and operating-system files
 .vscode/
 .idea/
-
-# Operating-system files
 .DS_Store
 Thumbs.db
 
 # Logs and temporary files
 *.log
 *.tmp
-*.temp
-
-# Python packaging output
-build/
-dist/
-*.egg-info/
-'@ | Set-Content -Encoding utf8 .gitignore
