@@ -1,5 +1,7 @@
 .venv/
 __pycache__/
+*.py[cod]
+.pytest_cache/
 .env
-*.db
-data/cache/
+data/kestrel_ops.db
+database_inspection.txt
